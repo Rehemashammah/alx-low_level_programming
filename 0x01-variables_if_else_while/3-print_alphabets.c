@@ -9,7 +9,11 @@ int main(void)
 
 	while (1)
 	{
-		if ((ch >= 'a' && ch <= 'z')  || (ch >= 'A' && ch <= 'Z'))
+		if ((ch >= 'a' && ch <= 'z'))
+		{
+			putchar (ch);
+		}
+		else if ((ch >= 'A' && ch <= 'Z'))
 		{
 			putchar (ch);
 		}
