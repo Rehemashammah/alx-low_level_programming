@@ -1,4 +1,6 @@
+#include "main.h"
 #include <stdio.h>
+
 /**
  * main - Entry point
  * Return: 0 on Success
@@ -21,7 +23,10 @@ int main(void)
 		{
 			printf("Buzz ");
 		}
-		printf("%d ", i);
+		else
+		{
+			printf("%d ", i);
+		}
 	}
 	printf("\n");
 	return (0);
