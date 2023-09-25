@@ -5,7 +5,6 @@
  * @s: Parameter one
  * @b: Parameter two
  * @n: Parameter three
- * 
  * Return: Pointer to the memory area s
  */
 
