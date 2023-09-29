@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * sqrt_function - Function to find the square root of a number
+ * sqrt_function - function to return the square root of a number
  * @num: Number passed to find its square root
  * @root: Square root of a num
- * Result: Always 0 on success
+ * Return: Always 0 on success
  */
 
 int sqrt_function(int num, int root)
