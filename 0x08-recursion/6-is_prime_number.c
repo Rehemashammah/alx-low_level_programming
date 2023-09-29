@@ -19,7 +19,7 @@ int _prime(int i, int j)
 	}
 	else
 	{
-		return (_prime(i, j-1));
+		return (_prime(i, j - 1));
 	}
 }
 
