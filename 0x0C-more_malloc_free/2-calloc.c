@@ -10,30 +10,21 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *ptr_call;
-	int *ptr_mall;
-	unsigned int i, j;
+	unsigned int i;
+	char *ptr;
 
-	ptr_mall = malloc(sizeof(int) * size);
-	ptr_call = calloc(nmemb, size);
-	if (nmemb == 0)
+	if (nmemb == 0 || size == 0)
 	{
-		return (NULL);
+		return ('\0');
 	}
-	if (size == 0)
+	ptr = malloc(nmemb * size);
+	if (ptr == NULL)
 	{
-		return (NULL);
+		return ('\0');
 	}
-	if (ptr_mall == NULL)
+	for (i = 0; i < nmemb * size; i++)
 	{
-		return (NULL);
+		ptr[i] = 0;
 	}
-	for (i = 0; i < size; i++)
-	{
-		for (j = 0; j < i; j++)
-		{
-			return (ptr_call);
-		}
-	}
-	return (ptr_mall);
+	return ((void *)ptr);
 }
