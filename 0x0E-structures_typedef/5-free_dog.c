@@ -2,8 +2,7 @@
 #include <stdlib.h>
 
 /**
- * free_dog- Function to free dogs
- * @dog_t: data type
+ * free_dog - Function to free dogs
  * @d: pointer to dog_t
  * Return: nothing
  */
