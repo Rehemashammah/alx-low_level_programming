@@ -10,14 +10,14 @@
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned long int i = 0x01;
+	unsigned long int mask = 0x01;
 
-	i <<= index;
+	mask <<= index;
 
-	if (i == 0)
+	if (mask == 0)
 		return (-1);
 
-	if ((n & i))
+	if ((n & mask))
 		return (1);
 	else
 		return (0);
