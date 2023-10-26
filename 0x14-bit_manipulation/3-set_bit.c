@@ -10,7 +10,7 @@
 
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned long int mask = 0x01 << index;
+	unsigned long int mask = 1UL << index;
 
 	if (mask == 0)
 	{
